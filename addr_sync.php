@@ -202,6 +202,7 @@ function add_or_update ($ldap_array, $addressbookid, $host_cloud, $user, $passwd
             "EMAIL"  => $primary_email,
             "PHOTO"  => $user_photo,
             "UID"  => $uid,
+	    "REV"  => $rev,
         );
         // etag generator
         $etag = md5($vcard);
@@ -370,6 +371,7 @@ function add_or_update_alias ($ldap_array, $addressbookid, $host_cloud, $user, $
             "EMAIL"  => $primary_email,
             "PHOTO"  => $user_photo,
             "UID"  => $uid,
+	    "REV"  => $rev,
         );
         // etag generator
         $etag = md5($vcard);
